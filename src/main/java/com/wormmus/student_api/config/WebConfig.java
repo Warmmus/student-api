@@ -13,7 +13,8 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                         "http://localhost:4200",
-                        "https://student-frontend.moazalshareef.workers.dev"
+                        "https://student-frontend.moazalshareef.workers.dev",
+                        "https://student-api.wormmus.com"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
     }
